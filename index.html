@@ -1,27 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My first website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page with a washingmachine program that illustrates my real life as a JavaScript object.">
+    <title>Daily Life</title>
+    <link rel="stylesheet" href="/css/dailylife.css">
+    <script type="text/javascript" src="/js/washingmachine.js"></script>
 </head>
 
 <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <h2>Web Security</h2>
-    <p id="web-security-question">How would you advise a potential client to secure his/her website from web security
-        attacks? Note: the word count for your answer should not be greater than 250 words</p>
 
-    <p id="web-security-answer">There are many things you can do to have good digital security and some of the simplest are:
-    <ul>
-        1. choose a good hosting<br>
-        2. use secure passwords<br>
-        3. use a third party for secure authentication and authorization<br>
-        4. use firewall and malware detector and keep it up to date<br>
-        5. make backups regularly<br>
-        6. limit the amount of internet downloads<br>
-    </ul>
-    </p>
+    <header>
+        <h1>Washingmachine</h1>
+    </header>
+
+    <div>
+
+        <section id="info">
+
+            <div>
+
+                <img width="100" src="assets/unsplash_yCYVV8-kQNM.png" alt="Washingmachine">
+
+            </div>
+            <input type="button" value="Refresh" onclick="Refresh()">
+            <div>
+                <p>Brand: <span id="brand"></span></p>
+                <p>Description: <span id="desc"></span></p>
+                <p>Programs: <span id="prog"></span></p>
+                <p>Running: <span id="isRunning"></span></p>
+                <p>Power:
+                    <input id="btnToggle" type="button" value="ON / OFF" onclick="washingMachine.toggleOnOff(); Refresh();">
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; EveryDayLife</p>
+    </footer>
+
 </body>
 
 </html>
